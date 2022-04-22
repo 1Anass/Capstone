@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-16" />
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+	<link href="assets/js/app.js" type="text/javascript"/>
+
+	</head>
+<body>
+	<div class="card">
+		<div class="card_title">
+			<h2 class="form_title">Track Your Macros</h2>
+		</div>
+
+		<div class="fields">
+		<div class="choices_box">
+			<label for="box">Goal: </label>
+			<div class="select">
+				
+				<select class="goal" name="goal">
+					<option value="l">Loose</option>
+					<option value="m">Maintain</option>
+					<option value="g">Gain</option>
+					
+				</select>
+
+			</div>
+		</div>
+		<div class="block">
+		<label class="lab" for="slider">Age: </label>
+		<input type="range" name="age" min=0 max=100 class="slider" value=0 id="range" oninput="changeInput(this.value)">
+		<span id="agevalue"></span>
+		<script>
+			var slider = document.getElementById("range");
+			var output = document.getElementById("agevalue");
+			output.innerHTML = slider.value;
+			slider.oninput = function() {output.innerHTML = this.value;}
+		</script>
+		</div>
+		<div class="gender">
+			<label>Gender: </label>
+			<div class="gselect">
+				<select class="genderchoices">
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+				</select>
+			</div>
+		</div>
+		<div class="block">
+		<label class="lab" for="winput">Weight: </label>
+		<input class="winput" type="text" name="Weight">
+		<span>Kg</span>
+		</div>
+		<div class="block">
+		<label class="lab" for="hinput">Height: </label>
+		<input class="hinput" type="text" name="Height">
+		<span>Cm</span>
+		</div>
+		<div class="choices_box">
+			<label for="box">Activity: </label>
+			<div class="select">
+				
+				<select class="activity" name="activity">
+					<option value="1.2">Sedentary</option>
+					<option value="1.375">Light</option>
+					<option value="1.55">Moderate</option>
+					<option value="1.725">Very Active</option>
+					<option value="1.9">Extra Active</option>
+					
+				</select>
+
+			</div>
+		</div>
+		<div class="but">
+		<script type="text/javascript" src="assets/js/app.js">
+
+		</script>
+	
+		<button name="Submit" onclick="compute_results()" >Submit</button>
+
+		</div>
+		<div class="results">
+		<div class="cal">
+			<span class="calories"> </span>
+		</div>
+		<div class="prot">
+			<span class="proteins"> </span>
+		</div>
+		<div class="carbs">
+			<span class="carbos"> </span>
+		</div>
+		<div class="fat">
+			<span class="fats"> </span>
+		</div>
+	</div>
+	<div class="numbers">
+		<div class="cal">
+			<span class="calnum"> </span>
+		</div>
+		<div class="prot">
+			<span class="protnum"> </span>
+		</div>
+		<div class="carbs">
+			<span class="carbnum"> </span>
+		</div>
+		<div class="fats">
+			<span class="fatnum"> </span>
+		</div>
+	</div>
+	</div>
+	
+		<div class="gif">
+			<img src="assets/images/gif.gif">
+		</div>
+
+	
+	</div>
+	
+
+
+
+	</body>
+
+	
+	<script src="https://cdn.jsdelivr.net/npm/@stomp/stompjs@5.0.0/bundles/stomp.umd.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+	<script type ="module" src="assets/js/fingerprint.js" ></script>
+	<script type ="module" src="assets/js/bundle.js" >
+
+	</script>
+
+</html>

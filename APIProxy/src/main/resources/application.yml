@@ -1,0 +1,71 @@
+# appName=proxy
+
+# logging.level.root=WARN
+
+# RealTimeAssistance.APIProxy.services.kafka.broker.type=kafka
+# RealTimeAssistance.APIProxy.services.kafka.broker.cluster=localhost:9092
+# kafka.bootstrapAddress=localhost:9092
+
+
+server: 
+    port: 8080
+spring:
+    kafka:
+        # properties:
+        #     sasl:
+        #         jaas:
+        #             config: org.apache.kafka.common.security.plain.PlainLoginModule   required username='SIMGKQWJQTIJDWE7'   password='XeaVjBwuw08GmoUg30lv/sdPWEU5MwCIDU0SXVVvtEbHMmgMtODsIEHTkXVGO7Dn';
+        #         mechanism: PLAIN
+        #     basic:
+        #         auth:
+        #             user:
+        #                 info: '{{ SCNDPHJBO6IEANHW }}:{{ y0gNp1JldspfqDDiyI9DzsqY+b8kqz2Kzpchosx2if3H7sQhIHeKwXqUrj3xdMl6 }}'
+        #         credentials:
+        #             source: USER_INFO
+        #     session:
+        #         timeout:
+        #             ms: '45000'
+        #     security:
+        #         protocol: SASL_SSL
+        #     schema:
+        #         registry:
+        #             url: https://psrc-9zg5y.europe-west3.gcp.confluent.cloud
+        #     bootstrap:
+        #         servers: pkc-zm3p0.eu-north-1.aws.confluent.cloud:9092
+
+
+
+
+
+
+    # properties:
+    #     sasl-mechanism: PLAIN
+    #     bootstrap-servers: pkc-lzvrd.us-west4.gcp.confluent.cloud:9092
+    #     sasl-jaas-config: org.apache.kafka.common.security.plain.PlainLoginModule   required username='{{ PNWEQQ5CXFSGO2N6 }}'   password='{{ 0ad1KVdssQs+G61Mk/SHUNHiyFRUnZ5YIhhzmMTp7dimdI27OImb/bzcOymVy7a8 }}'
+    #     security-protocol: SASL_SSL
+
+
+    #  consumer:
+    #     bootstrap-servers: localhost:9092
+    #     group-id: group_id
+    #     auto-offset-reset: earliest
+    #     key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    #     value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+        producer:
+            bootstrap-servers: localhost:9092
+            key-serializer: org.apache.kafka.common.serialization.StringSerializer
+            value-serializer: org.apache.kafka.common.serialization.StringSerializer
+websocket:
+    connectionEndpoint: /connect
+    destinationPrefix: /app
+    subscriptionPrefix: /topic
+    allowedOrigins: "*" 
+
+
+
+
+# Kafka
+# spring.kafka.properties.sasl.mechanism=PLAIN
+# spring.kafka.properties.bootstrap.servers=pkc-lzvrd.us-west4.gcp.confluent.cloud:9092
+# spring.kafka.properties.sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule   required username='{{ CLUSTER_API_KEY }}'   password='{{ CLUSTER_API_SECRET }}';
+# spring.kafka.properties.security.protocol=SASL_SSL

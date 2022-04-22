@@ -1,0 +1,20 @@
+{
+  "name": "datasourcereader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@stomp/stompjs": "^6.1.2",
+    "websocket": "^1.0.34",
+    "webstomp": "0.0.10",
+    "webstomp-client": "^1.2.6"
+  },
+  "devDependencies": {
+    "@types/sockjs-client": "^1.5.1"
+  }
+}

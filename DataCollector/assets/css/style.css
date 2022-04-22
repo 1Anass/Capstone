@@ -1,0 +1,235 @@
+.form_title
+{
+	text-align:center!important;
+	color:#FF6600;
+	padding-top: 10px
+}
+body
+{
+	background:#D0D0D0;
+}
+.card_title
+{
+	background: #3366CC ;
+	border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    margin-bottom: 30px;
+    height:50px;
+    margin-top:-20px;
+}
+.card
+{
+	position:relative;
+	margin:auto;
+	width:50px;
+	padding: 10px;
+	border:none!important;
+	border-radius:0.5rem!important;
+	display:-ms-flexbox;
+	-ms-flex-direction:column;
+	position:relative;
+	display:block;
+	flex-direction: column;
+	background-color:white;
+	border-radius: 0.25rem;
+	height:700px;
+	width:50%;
+	position:center;
+}
+#agevalue
+{
+	display:inline-block;
+}
+label
+{
+	display:inline-block;
+	width:140px;
+	text-align:right;
+	font-size:20px;
+	font-family:Lucida Sans;
+}
+
+.fields
+{
+	display:inline-block;
+	align-content: left;
+	width:60%;
+	height:400px;
+ 	float:left;
+    margin-left:-50px;
+}
+img
+{
+	
+	height:400px;
+	display:inline-block;
+}
+
+.but
+{
+	display:block;
+
+}
+button
+{
+	margin-left: 140px;
+	margin-top: 80px;
+	width:140px;
+	font-family: 'Metropolis-Bold' !important;
+    color: #fff !important;
+    background-color: #3366CC;
+    border-color: #3366CC;
+    height:30px;
+    font-size: 16px;
+    color:color:#FF6600;
+    font-family: 'Roboto';
+    font-weight: 500;
+    line-height: var(--font-size);
+    border-radius: 24px;
+    letter-spacing: .5px; 
+
+    
+}
+button:hover 
+{
+	background-color: #FF6600;
+}
+.gif
+{
+
+	float:left;
+	width:20%;
+}
+.select
+{
+	display:inline-block;
+	
+
+}
+.block
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.gselect
+{
+	background-color: green;
+	display:inline-block;
+}
+.slider
+{
+	-webkit-appearance:none;
+	appearance:none;
+	width:140px;
+	height:5px;
+	background:#3366CC;
+	outline:none;
+	opacity:0.7;
+	-webkit-transition:.2s;
+	transition: opacity .2s;
+	
+}
+.slider::hover
+{
+	opacity:1;
+}
+.results
+{
+	margin-top: 120px;
+	margin-left:120px;
+	width:600px;
+	text-align: left;
+}
+.numbers
+{
+	margin-top: 10px;
+	margin-left:120px;
+	width:600px;
+	text-align: left;
+}
+.calories 
+{
+	width:20%;
+	margin:0px;
+	font-family: Lucida Sans;
+	display:inline-block;
+	float:left;
+	margin-right:20px;
+}
+.calnum
+{
+	width:20%;
+	margin:0px;
+	font-family:Lucida Sans;
+	display:inline-block;
+	float:left;
+	margin-right:20px;
+}
+.calnum:hover
+{
+	font-size:20px;
+}
+.proteins 
+{
+	width:20%;
+	margin:0px;
+	font-family: Lucida Sans;
+	display:inline-block;
+	float:left;
+	margin-right:10px;
+}
+.protnum
+{
+	width:20%;
+	margin:0px;
+	font-family:Lucida Sans;
+	display:inline-block;
+	float:left;
+	margin-right:10px;
+}
+.protnum:hover
+{
+	font-size:20px;
+}
+.carbos 
+{
+	width:20%;
+	margin:0px;
+	font-family: Lucida Sans;
+	display:inline-block;
+	float:left;
+	margin-right:40px;
+}
+.carbnum
+{
+	width:20%;
+	margin:0px;
+
+	display:inline-block;
+	float:left;
+	margin-right:40px;
+	font-family:Lucida Sans;
+}
+.carbnum:hover
+{
+	font-size:20px;
+}
+.fats 
+{
+	width:20%;
+	margin:0px;
+	font-family: Lucida Sans;
+	display:inline-block;
+}
+.fatnum
+{
+	width:20%;
+	margin:0px;
+	display:inline-block;
+	font-family:Lucida Sans;
+}
+.fatnum:hover
+{
+	font-size:20px;
+}
